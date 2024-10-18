@@ -17,8 +17,6 @@ public class TimelinePage extends Application {
     public TimelinePage(ObservableList<AdminTimeLinePage.Task> tasks) {
         this.tasks = tasks;
     }
-
-    @Override
     public void start(Stage primaryStage) {
         TableView<AdminTimeLinePage.Task> taskTableView = new TableView<>();
 
@@ -43,7 +41,6 @@ public class TimelinePage extends Application {
         statusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
 
         statusColumn.setCellFactory(cell -> new TableCell<AdminTimeLinePage.Task, String>() {
-            @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
                 if (empty || item == null) {
