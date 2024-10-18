@@ -12,7 +12,7 @@ import java.time.LocalDate;
 
 public class ConnPage extends Application {
 
-    @Override
+    
     public void start(Stage primaryStage) {
         ObservableList<AdminTimeLinePage.Task> tasks = FXCollections.observableArrayList(
                 new AdminTimeLinePage.Task("Sample Task 1", LocalDate.of(2024, 10, 1), LocalDate.of(2024, 10, 5), "Ongoing"),
